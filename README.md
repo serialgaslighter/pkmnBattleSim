@@ -1,8 +1,8 @@
-# React + Vite
+# PKMN BATTLE SIM
+PKMNBATTLESIM is an exciting simulation game where players can strategize and engage in epic battles against AI-controlled opponents.
+<br>Perfect your team, outthink the AI, and climb the ranks in a dynamic Pokémon-inspired battle system!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Disclaimer
+PKMNBATTLESIM is a fan-made game and is not affiliated with, endorsed by, or associated with Nintendo, Game Freak, or The Pokémon Company. Pokémon and all related trademarks and copyrights are the property of Nintendo, Game Freak, and The Pokémon Company.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Changelog
