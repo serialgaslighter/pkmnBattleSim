@@ -1,0 +1,24 @@
+.battlefield {
+  width: 75vw;
+  height: 85vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+  .enemy-container {
+    width: 20vw;
+    height: 40vh;
+    background-color: orange;
+    grid-column: 2;
+    margin-left: 200px;
+  }
+
+  .player-container {
+    width: 20vw;
+    height: 40vh;
+    background-color: orange;
+    grid-row: 2;
+    margin-left: 100px;
+  }
+}
