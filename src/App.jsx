@@ -1,4 +1,4 @@
-import { Field } from "./components/Field.jsx"
+import { Field } from "./components/field.jsx"
 import './components/FieldStyle.scss'
 
 function App() {
