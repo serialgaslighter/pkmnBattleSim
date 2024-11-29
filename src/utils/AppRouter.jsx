@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import { Teambuilder } from "../pages/Teambuilder";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -9,8 +10,8 @@ export const AppRouter = createBrowserRouter([
     children: [
       {
         path: "/teambuilder",
-        element: 
+        element: <Teambuilder />
       }
     ]
   }
-]
+])
