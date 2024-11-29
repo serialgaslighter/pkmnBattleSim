@@ -1,11 +1,11 @@
-import { Field } from "./components/field.jsx"
-import './components/FieldStyle.scss'
+import { Outlet } from "react-router-dom";
+import './components/FieldStyle.scss';
 
 function App() {
 
   return (
     <>
-      <Field />
+      <Outlet />
     </>
   )
 }
