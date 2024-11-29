@@ -6,3 +6,7 @@ PKMNBATTLESIM is an exciting simulation game where players can strategize and en
 PKMNBATTLESIM is a fan-made game and is not affiliated with, endorsed by, or associated with Nintendo, Game Freak, or The Pokémon Company. Pokémon and all related trademarks and copyrights are the property of Nintendo, Game Freak, and The Pokémon Company.
 
 ## Changelog
+
+#### V0.1
+##### Features
+- The Searchbar in the Teambuilder filters based on input.
