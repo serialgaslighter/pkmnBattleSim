@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AppContext } from "../utils/pkmnContext";
 import { Searchbar } from "../components/searchbar";
 
 export const Teambuilder = () => {
   const [allPkmn, setAllPkmn] = useState([]);
   const [loading, setLoading] = useState(true);
+  const {playerTeamPkmn, setPlayerTeamPkmn} = useContext(AppContext);
 
   useEffect(() => {
     const URL = "https://pokeapi.co/api/v2/";
