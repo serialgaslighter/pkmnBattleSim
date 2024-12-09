@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { AppContext } from "../utils/pkmnContext";
 import { Searchbar } from "../components/searchbar";
+import { PkmnCard } from "../components/PkmnCard";
 
 export const Teambuilder = () => {
   const [allPkmn, setAllPkmn] = useState([]);
@@ -36,6 +37,9 @@ export const Teambuilder = () => {
           <li key={index}>{pkmn}</li>
         ))}
       </ul>
+      {playerTeamPkmn.map((pkmn, index) => {
+        return <PkmnCard key={index} pkmn={pkmn}/>
+      })}
     </>
   );
 };
