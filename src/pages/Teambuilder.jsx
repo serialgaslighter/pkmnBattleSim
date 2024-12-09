@@ -26,12 +26,16 @@ export const Teambuilder = () => {
   if (loading) {
     return <h2>Loading...</h2>;
   }
-  console.log(allPkmn);
 
   return (
     <>
       <h1>Teambuilder</h1>
       <Searchbar pkmnList={allPkmn} />
+      <ul>
+        {playerTeamPkmn.map((pkmn, index) => (
+          <li key={index}>{pkmn}</li>
+        ))}
+      </ul>
     </>
   );
 };

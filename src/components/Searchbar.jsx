@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AppContext } from "../utils/pkmnContext";
+// import { addPkmnToTeam } from "../apps/addPkmnToTeam";
 
 export const Searchbar = ({ pkmnList }) => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+  const {playerTeamPkmn, setPlayerTeamPkmn} = useContext(AppContext);
 
   const handleSuggestion = (e) => {
     const input = e.target.value;
@@ -19,6 +22,12 @@ export const Searchbar = ({ pkmnList }) => {
     setFilteredSuggestions(filteredPkmnList);
   };
 
+  const addPkmnToTeam = (event) => {
+    const pkmn = event.target.textContent;
+  
+    setPlayerTeamPkmn(prevState => [...prevState, pkmn])
+  }
+
   return (
     <>
       <input 
@@ -29,9 +38,10 @@ export const Searchbar = ({ pkmnList }) => {
       />
       <ul>
         {filteredSuggestions.map((pkmn, index) => (
-          <li key={index}>{pkmn.name}</li>
+          <li key={index} onClick={(event) => addPkmnToTeam(event)}>{pkmn.name}</li>
         ))}
       </ul>
     </>
   );
+  console.log(playerTeamPkmn);
 };
